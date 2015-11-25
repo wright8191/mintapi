@@ -270,7 +270,7 @@ class Mint(requests.Session):
 
         # account types in this list will be subtracted
         negative_accounts = ['loan', 'loans', 'credit']
-        net_worth = 0L
+        net_worth = 0
 
         # iterate over accounts and add or subtract account balances
         for account in [a for a in account_data if a['isActive']]:
